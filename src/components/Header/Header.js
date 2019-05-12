@@ -24,34 +24,20 @@ class Header extends React.Component {
           </div>
         </div>
         <Router>
-          <nav>
-            <ul>
-              <li>
+          <nav className="navbar">
                 <Link to="/home">Home</Link>
-              </li>
-              <li>
                 <Link to="/shop">The Pastry Shop</Link>
-              </li>
-              <li>
                 <Link to="/about">About Us</Link>
-              </li>
-              <li>
                 <Link to="/service">Services</Link>
-              </li>
-              <li>
                 <Link to="/blog">Blog</Link>
-              </li>
-              <li>
                 <Link to="/contact">Contact Us</Link>
-              </li>
-            </ul>
 
             <Route exact path="/" component={Home}></Route>
             <Route path="/shop" component={Shop} />
             <Route path="/about" component={About}></Route>
-            <Route path="/service" component={Service}></Route>
             <Route path="/blog" component={Blog}></Route>
             <Route path="/contact" component={Contact}></Route>
+            <Route path="/service" component={Service}></Route>
           </nav>
         </Router>
 
